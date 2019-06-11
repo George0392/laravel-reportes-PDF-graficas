@@ -52,7 +52,7 @@ class ConsultorioController extends Controller
      */
     public function store(ConsultorioRequest $request)
     {
-        $consultorio = Consultorio::create($request->all());        
+        $consultorio = Consultorio::create($request->all());
 
         return redirect()->route('consultorios.index',$consultorio->id)->with('info', 'Guardado Exitosamente' );
 
@@ -121,7 +121,7 @@ public function edit($id)
     public function exportarpdf($id)
     {
         $consultorio = Consultorio::findOrFail($id);
-     
+
         $pdf=PDF::loadView('consultorios.pdf',compact('consultorio'))
                  ->setPaper('letter', 'portrait');
 
@@ -129,5 +129,5 @@ public function edit($id)
         return $pdf->stream();
 
     }
-    
+
 }

@@ -16,17 +16,22 @@
 <!-- ./wrapper -->
 <!-- REQUIRED JS SCRIPTS -->
 <!-- jQuery 3 -->
-<script src="{{ asset('js/jquery.min.js') }}"></script>
+<script src="{{ asset('js/jquery-3.4.1.min.js') }}"></script>
+
 <!-- Bootstrap 3.3.7 -->
 <script src="{{ asset('css/bootstrap/js/bootstrap.min.js') }}"></script>
 <!-- AdminLTE App -->
-<script src="{{ asset('js/adminlte.min.js') }}"></script>
 <!-- bootstrap select -->
 <script src="{{ asset('js/bootstrap-select.min.js') }}"></script>
+
+<script src="{{ asset('js/adminlte.min.js') }}"></script>
+
 <!-- formularios -->
- <script src="{{ asset('js/jquery-1.11.3.min.js') }}"></script>
+{{-- <script src="{{ asset('js/jquery-1.11.3.min.js') }}"></script> --}}
 <script src="{{ asset('js/jquery-ui.min.js') }}"></script>
 <script src="{{ asset('js/jquery.stepyform.js') }}"></script>
+
+
 @stack('scripts')
 <!-- Optionally, you can add Slimscroll and FastClick plugins.
 Both of these plugins are recommended to enhance the
